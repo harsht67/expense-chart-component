@@ -1,0 +1,100 @@
+.app {
+    padding: 1rem;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .app__container {
+        width: min(100%, 400px);
+    }
+
+    header {
+        width: 100%;
+        padding: 1.5rem;
+        background-color: #ec775f;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-block-end: 1rem;
+
+        .balance {
+            display: flex;
+            flex-flow: column;
+            gap: 0.5rem;
+            color: #fffaf5;
+
+            p:last-child {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+        }
+
+    }
+
+    main {
+        padding: 1rem;
+        background-color: #fffaf5;
+        border-radius: 0.5rem;
+        width: 100%;
+        color: #93867b;
+        font-size: 1.1rem;
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+
+        .imp {
+            color: #382314;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .bar {
+            cursor: pointer;
+            transition: all 0.25s;
+
+            &:hover, &:active {
+                opacity: 0.8;
+            }
+        
+        }
+
+        .desc {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .total {
+
+                p:last-child {
+                    font-size: 2rem;
+                }
+
+            }
+
+            .gains {
+                text-align: right;
+
+                p:first-child {
+                    font-size: 1.25rem;
+                }
+
+            }
+
+        }
+
+        hr {
+            width: 100%;
+            border: none;
+            border-block-start: 2px solid #f8e9dd;
+        }
+
+    }
+
+}
